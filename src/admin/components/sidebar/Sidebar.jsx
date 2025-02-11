@@ -110,6 +110,7 @@ const Sidebar = () => {
                       fontWeight: "550",
                     },
                   }}
+                  primary="Subcategory"
                 />
               </ListItemButton>
             </Link>

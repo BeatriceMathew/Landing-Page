@@ -1,0 +1,128 @@
+.Header {
+  height: 70px;
+  border-bottom: 0.9px solid rgb(182, 179, 179);
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #555;
+  flex-direction: row;
+  //justify-content: start;
+a{
+  text-decoration: none;
+  color: rgb(78, 77, 77);
+}
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    //background-color: purple;
+
+    .name {
+      gap: 20px;
+      flex-direction: row;
+      display: flex;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      font-size: 23px;
+      font-weight: bold;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      background-color: #e7f4fb;
+      border-radius: 5px;
+      width: 50%;
+      .txt {
+          border: none;
+          border-radius: 2px 0 0 2px;
+          outline: none;
+          font-size: 1rem;
+          background-color: transparent;
+          width: 40vw;
+          
+
+
+      }
+
+      .btn {
+
+          border: none;
+          color: rgb(12, 126, 164);
+          border-radius: 100%;
+          padding: 10px;
+          background-color: transparent;
+
+      }
+
+  }
+
+    .item1 {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      position: relative;
+      font-weight: 800px;
+      // background-color: yellowgreen;
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+        font-size: 20px;
+        // background-color: yellowgreen;
+
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+    .side {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+
+      .sidess {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+        font-size: 19px;
+      }
+    }
+    .Logins {
+      display: flex;
+      align-items: center;
+
+      .Login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: #2c73d2;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        .btn {
+          text-decoration: none;
+          color: white;
+        }
+        .logicon {
+          color: white;
+        }
+      }
+    }
+  }
+}

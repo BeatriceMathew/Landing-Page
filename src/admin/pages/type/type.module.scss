@@ -1,0 +1,60 @@
+.container {
+
+    .con {
+      display: flex;
+    }
+    .subcontainer {
+      display: flex;
+  
+      .sidebar {
+        width: 35vh;
+      }
+  
+      .type {
+        display: flex;
+      flex-direction: column;
+      margin-top: 54px;
+      height: 29vh;
+      background-color: #dbf3fa;
+      padding: 10px;
+      width: 50vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-left: 70px;
+        .title {
+          font-size: 1.8rem;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-weight: bold;
+          color: #056881;
+          margin-bottom: 5px;
+          margin-top: 13px;
+          }
+        .Text{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 20px;
+            padding: 30px;
+           margin-left: 40px;
+            
+            // height: 50vh;
+            .Field{
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgb(200, 199, 199);
+                font-size: 17px;
+                color: #555555;
+            }
+            .Buttons{
+                width: 90px;
+                margin-left: 50px;
+                margin-top: 20px;
+                background-color: #16a4c0;
+
+            }
+        }
+      }
+    }
+}

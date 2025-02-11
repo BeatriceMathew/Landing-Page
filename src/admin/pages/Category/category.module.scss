@@ -1,0 +1,56 @@
+.container {
+  .con {
+    display: flex;
+  }
+  .subcontainer {
+    display: flex;
+
+    .sidebar {
+      width: 35vh;
+    }
+
+    .category {
+      display: flex;
+      flex-direction: row;
+      margin-top: 54px;
+      height: 23vh;
+      background-color: #dbf3fa;
+      padding: 10px;
+      width: 60vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-left: 70px;
+    }
+  }
+
+  .title {
+    font-size: 1.8rem;
+    //align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    color: #056881;
+    margin-bottom: 10px;
+    margin-top: 1px;
+  }
+
+  .inputGroup {
+    flex-direction: row;
+    //background: white;
+    padding: 20px;
+    width: 400px;
+
+    .Text {
+      margin-left: 20px;
+      width: 100%;
+
+      .Buttons {
+        background-color: #16a4c0;
+        color: white;
+        padding: 10px;
+        margin-left: 270px;
+        margin-top: -50px;
+      }
+    }
+  }
+}

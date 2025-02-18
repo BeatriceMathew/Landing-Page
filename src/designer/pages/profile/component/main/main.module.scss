@@ -75,12 +75,46 @@ padding: 10px;
 
 }
 
+.bio{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+
+
+
+  
+.biotxt{
+    
+    height: 4vh;
+
+}
+
+
+}
+
+.licence{
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+
+
+
+  
+.licencetxt{
+    
+    height: 4vh;
+
+}
+
+
+}
+
 .update{
     display: flex;
     justify-content: flex-end;
     .updatebtn{
         color: white;
-        background-color: rgb(14, 133, 139);
+        background-color: rgb(13, 105, 144);
         border: none;
         border-radius: 30px;
     width: 5vw;
@@ -134,7 +168,7 @@ align-items: center;
     justify-content: flex-end;
     .updatebtn{
         color: white;
-        background-color: rgb(14, 133, 139);
+        background-color: rgb(13, 105, 144);
         border: none;
         border-radius: 30px;
     width: 5vw;
@@ -180,7 +214,7 @@ flex-direction: column;
         justify-content: flex-end;
         .updatebtn{
             color: white;
-            background-color: rgb(14, 133, 139);
+            background-color: rgb(13, 105, 144);
             border: none;
             border-radius: 30px;
         width: 5vw;

@@ -1,17 +1,21 @@
 import React from 'react'
-//import Sidebar from '../designer/components/sidebar/Sidebar'
-import Home from '../designer/pages/home/Home'
 import { Route, Routes } from 'react-router-dom'
-import EditProfile from '../designer/pages/editprofile/EditProfile'
+import Home from '../designer/pages/home/Home'
+import Profile from '../designer/pages/profile/Profile'
+import Create from '../designer/pages/create/Create'
+import OrderView from '../designer/pages/vieworders/OrderView'
+import Explore from '../designer/pages/explore/Explore'
 
 const DesignerRoutes = () => {
   return (
     <div>
-        <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/EditProfile" element={<EditProfile/>}/>
-        
-      </Routes>
+      <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path='/profile' element={<Profile/>}/>
+    <Route path='/explore' element={<Explore/>}/>
+    <Route path='/create' element={<Create/>}/>
+    <Route path='/orderview' element={<OrderView/>}/>
+     </Routes>
     </div>
   )
 }

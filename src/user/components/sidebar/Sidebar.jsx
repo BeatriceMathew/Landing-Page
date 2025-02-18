@@ -5,7 +5,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
+//import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import SlowMotionVideoSharpIcon from '@mui/icons-material/SlowMotionVideoSharp';
 import Styles from "./sidebar.module.scss";
@@ -20,15 +20,15 @@ const Sidebar = () => {
       <ul className={Styles.navLinks}>
         <li className={Styles.navItem}>
           <HomeOutlinedIcon className={Styles.icon} />
-          <span>Home</span>
+          <span><Link to='/user' className={Styles.link}>  Home</Link></span>
         </li>
         <li className={Styles.navItem}>
           <SearchOutlinedIcon className={Styles.icon} />
-          <span>Search</span>
+          <span><Link to='/user/search' className={Styles.link}>  Search</Link></span>
         </li>
         <li className={Styles.navItem}>
           <ExploreOutlinedIcon className={Styles.icon} />
-          <span>Explore</span>
+          <span><Link to='/user/explore' className={Styles.link}>  Explore</Link></span>
         </li>
         <li className={Styles.navItem}>
           <FavoriteBorderOutlinedIcon className={Styles.icon} />
@@ -36,12 +36,12 @@ const Sidebar = () => {
         </li>
         <li className={Styles.navItem}>
           <SlowMotionVideoSharpIcon className={Styles.icon} />
-          <span>Reels</span>
+          <span><Link to='/user/reel' className={Styles.link}>  Reels</Link></span>
         </li>
-        <li className={Styles.navItem}>
+        {/* <li className={Styles.navItem}>
           <AddBoxOutlinedIcon className={Styles.icon} />
           <span>Create</span>
-        </li>
+        </li> */}
         <li className={Styles.navItem}>
           <AccountCircleOutlinedIcon className={Styles.icon} />
           <span><Link to='/user/profile' className={Styles.link}>  Account Info</Link></span>

@@ -1,0 +1,93 @@
+.orderContainer {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .orderContent {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .orderDetails {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+  
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .replySection {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .replyForm {
+      display: flex;
+      flex-direction: column;
+  
+      textarea {
+        height: 120px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        resize: none;
+        outline: none;
+  
+        &:focus {
+          border-color: #3b82f6;
+        }
+      }
+  
+      button {
+        background-color: #3b82f6;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+  
+        &:hover {
+          background-color: #2563eb;
+        }
+      }
+    }
+  
+    .responses {
+      margin-top: 20px;
+      
+      .responseItem {
+        background-color: #f0f0f0;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+  

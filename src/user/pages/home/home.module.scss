@@ -1,0 +1,39 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+  .sidebar {
+    background-color: #fafafa;
+    position: fixed; /* Keeps the sidebar fixed while scrolling */
+    height: 100%;
+   
+  }
+  
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  .suggestions {
+    width: 250px;
+    margin-right: 10rem;
+    
+  }
+  
+  .posts 
+     {
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        overflow-y: auto; /* Makes the posts scrollable */
+        height: calc(100vh - 32px); /* Ensures posts fill the height below the header */
+        width: 50%;
+        margin-left: 20rem;
+      }
+  
+}
+.posts::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,119 @@
+.reelsContainer {
+    display: flex;
+    // height: 100vh; /* Full screen height */
+    // scroll-snap-type: y mandatory; /* Snap each reel to the full screen */
+
+  
+  }
+  
+  .reel {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 97vh;
+    overflow-y: scroll;
+    
+   
+    width: 50%;  /* Full width of the screen */
+    
+    gap: 10px;
+
+    scrollbar-width: none; /* Firefox */
+   
+  }
+  
+  .reel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .Reel{
+    scroll-snap-align: start; /* To align the videos correctly when scrolling */
+    position: relative; /* To allow absolute positioning inside */
+  }
+  
+  
+  .reelVideo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .reelInfo {
+    position: absolute;
+    bottom: 40px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .reelUser {
+    display: flex;
+    align-items: center;
+  }
+  
+  .reelProfilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 2px solid #fff; /* Subtle border around the profile pic */
+  }
+  
+  .reelUsername {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .reelCaption {
+    font-size: 14px;
+    max-width: 80%;
+    color: rgba(255, 255, 255, 0.85); /* Slightly transparent text */
+    margin-bottom: 12px;
+  }
+  
+  .reelStats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .reelActions {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .reelActions button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .reelActions button:hover {
+    color: #ff3b30; /* Highlight color for interaction */
+  }
+  
+  .reelActions .likeButton {
+    font-size: 28px; /* Larger like button icon */
+  }
+  
+  .reelActions .commentButton,
+  .reelActions .shareButton {
+    font-size: 22px; /* Slightly smaller icons for other actions */
+  }
+  

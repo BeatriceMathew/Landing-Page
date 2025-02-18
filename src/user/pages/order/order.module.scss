@@ -1,0 +1,165 @@
+
+/* Main container for the layout */
+.orderContainer {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+}
+
+
+
+/* Content container for the order form */
+.orderContent {
+  flex-grow: 1;
+  margin-left: 300px; /* Leave space for the sidebar */
+  margin-right: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Header for the form */
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form container for the inputs */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label styling */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* General input, select, and textarea styles */
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus and hover effects for the inputs */
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0095f6;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 149, 246, 0.3);
+  background-color: #fff;
+}
+
+/* Textarea specific style */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Styling for file input */
+input[type="file"] {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+/* File input button custom styling */
+input[type="file"]::file-selector-button {
+  padding: 10px 20px;
+  background-color: #0095f6;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #0084d1;
+}
+
+/* Styling for the submit button */
+button {
+  background-color: #0095f6;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+  background-color: #0084d1;
+}
+
+button:active {
+  background-color: #0071a3;
+}
+
+/* Cursor styling for select and file input */
+select,
+input[type="file"] {
+  cursor: pointer;
+}
+
+//Media query for smaller screens (e.g., mobile responsiveness) */
+@media screen and (max-width: 768px) {
+  .orderContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+
+  .orderContent {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}

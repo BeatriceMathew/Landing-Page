@@ -30,13 +30,14 @@ const Sidebar = () => {
           <ExploreOutlinedIcon className={Styles.icon} />
           <span><Link to='/user/explore' className={Styles.link}>  Explore</Link></span>
         </li>
-        <li className={Styles.navItem}>
-          <FavoriteBorderOutlinedIcon className={Styles.icon} />
-          <span>Notifications</span>
-        </li>
+        
         <li className={Styles.navItem}>
           <SlowMotionVideoSharpIcon className={Styles.icon} />
           <span><Link to='/user/reel' className={Styles.link}>  Reels</Link></span>
+        </li>
+        <li className={Styles.navItem}>
+          <FavoriteBorderOutlinedIcon className={Styles.icon} />
+          <span><Link to='/user/order' className={Styles.link}>  Order</Link></span>
         </li>
         {/* <li className={Styles.navItem}>
           <AddBoxOutlinedIcon className={Styles.icon} />

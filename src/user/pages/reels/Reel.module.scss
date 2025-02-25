@@ -1,119 +1,206 @@
 .reelsContainer {
-    display: flex;
-    // height: 100vh; /* Full screen height */
-    // scroll-snap-type: y mandatory; /* Snap each reel to the full screen */
+  display: flex;
+  // height: 100vh; /* Full screen height */
+  // scroll-snap-type: y mandatory; /* Snap each reel to the full screen */
+}
 
-  
-  }
-  
-  .reel {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    height: 97vh;
-    overflow-y: scroll;
-    
-   
-    width: 50%;  /* Full width of the screen */
-    
-    gap: 10px;
+.reel {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  height: 97vh;
+  overflow-y: scroll;
+  margin-left: 15%;
+  width: 50%;
+  gap: 10px;
+  scrollbar-width: none; /* Firefox */
+}
 
-    scrollbar-width: none; /* Firefox */
-   
-  }
-  
-  .reel::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-  }
-  
-  .Reel{
-    scroll-snap-align: start; /* To align the videos correctly when scrolling */
-    position: relative; /* To allow absolute positioning inside */
-  }
-  
-  
-  .reelVideo {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-  
-  .reelInfo {
-    position: absolute;
-    bottom: 40px; /* Distance from the bottom */
-    left: 20px; /* Distance from the left */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 10;
-    width: 100%;
-  }
-  
-  .reelUser {
-    display: flex;
-    align-items: center;
-  }
-  
-  .reelProfilePic {
-    width: 50px;
-    height: 50px;
+.reel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.Reel {
+  scroll-snap-align: start; /* To align the videos correctly when scrolling */
+  position: relative; /* To allow absolute positioning inside */
+}
+.profile {
+  position: absolute;
+  top: 84%;
+  left: 15px;
+  display: flex;
+  padding: 8px 12px;
+  border-radius: 20px;
+
+  .img {
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
-    margin-right: 12px;
-    border: 2px solid #fff; /* Subtle border around the profile pic */
+    object-fit: cover;
+    border: 2px solid white;
   }
-  
-  .reelUsername {
-    font-size: 16px;
+
+  .name {
+    margin-left: 15px;
+    margin-top: 6%;
+    color: white;
+    font-size: 14px;
     font-weight: bold;
-    color: #fff;
   }
-  
-  .reelCaption {
-    font-size: 14px;
-    max-width: 80%;
-    color: rgba(255, 255, 255, 0.85); /* Slightly transparent text */
-    margin-bottom: 12px;
+  .caption {
+    margin-left: -60px;
+    margin-top: 22%;
+    color: rgb(239, 234, 234);
+    font-size: 12px;
   }
-  
-  .reelStats {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+}
+
+.reelVideo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.reelInfo {
+  position: absolute;
+  bottom: 40px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+  width: 100%;
+}
+
+.reelUser {
+  display: flex;
+  align-items: center;
+}
+
+.reelProfilePic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #fff; /* Subtle border around the profile pic */
+}
+
+.reelUsername {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.reelCaption {
+  font-size: 14px;
+  max-width: 80%;
+  color: rgba(255, 255, 255, 0.85); /* Slightly transparent text */
+  margin-bottom: 12px;
+}
+
+.reelStats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.reelActions {
+  position: absolute;
+  top: 80%;
+  right: 16px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //gap: 16px;
+
+  .likes {
+    color: white;
+    margin-bottom: 18px;
   }
-  
-  .reelActions {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    z-index: 20;
+}
+
+.reelActions button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reelActions button:hover {
+  color: #ff3b30; /* Highlight color for interaction */
+}
+
+.reelActions .likeButton {
+  font-size: 28px; /* Larger like button icon */
+}
+
+.reelActions .commentButton,
+.reelActions .shareButton {
+  font-size: 22px; /* Slightly smaller icons for other actions */
+}
+.commentPopup {
+  .MuiDialog-paper {
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .commentTitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 12px;
+  }
+
+  .commentContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 15px;
   }
-  
-  .reelActions button {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 20px;
+
+  .commentsList {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .comment {
+    display: flex;
+
+    gap: 6px;
+    padding: 6px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .replyButton,
+  .likeButton {
+    color: #8e8e8e;
+    font-size: 14px;
     cursor: pointer;
   }
-  
-  .reelActions button:hover {
-    color: #ff3b30; /* Highlight color for interaction */
+
+  .replyBox {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+    margin-top: 6px;
   }
-  
-  .reelActions .likeButton {
-    font-size: 28px; /* Larger like button icon */
+
+  .replies {
+    margin-left: 20px;
+    display: flex;
+    gap: 6px;
   }
-  
-  .reelActions .commentButton,
-  .reelActions .shareButton {
-    font-size: 22px; /* Slightly smaller icons for other actions */
-  }
-  
+}

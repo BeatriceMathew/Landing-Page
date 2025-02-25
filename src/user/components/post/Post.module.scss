@@ -1,71 +1,204 @@
 .post {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.profilePic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+  margin-right: 5px;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.postActions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.leftActions {
+  display: flex;
+  gap: 15px;
+}
+
+.likeButton, .commentButton, .shareButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #333;
+}
+
+.likeButton:hover, .commentButton:hover, .shareButton:hover {
+  color: #ff0000;
+}
+
+.likeCount {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.caption {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.caption span {
+  font-weight: bold;
+}
+
+.commentSection {
+  padding: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.comment {
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.commentHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.commentUser {
+ 
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.commentText {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.commentActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.likeCommentButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #999;
+}
+
+.likeCommentButton:hover {
+  color: #ff0000;
+}
+
+.replyButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #999;
+}
+
+.replyButton:hover {
+  color: #ff0000;
+}
+
+.replies {
+  display: flex;
+
+  margin-left: 40px;
+  padding-left: 10px;
+  border-left: 1px solid #e6e6e6;
+  margin-top: 5px;
+}
+
+.reply {
+  display: flex;
+
+  align-items: center;
+  margin-top: 20px;
+  padding: 8px;
+}
+
+.replyHeader {
+  display: flex;
   
-  .postHeader {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #e6e6e6;
-  }
+  align-items: center;
+}
+
+.replyUser {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.replyText {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.addComment, .addReply {
+  display: flex;
   
-  .profilePic {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .username {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .postImage {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #e6e6e6;
-  }
-  
-  .postActions {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .likeButton, .commentButton {
-    background: none;
-    border: none;
-    color: #009688;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-  }
-  
-  .likeButton {
-    color: #ed4956;
-  }
-  
-  .commentButton {
-    color: #999;
-  }
-  
-  .likeButton:hover, .commentButton:hover {
-    text-decoration: underline;
-  }
-  
-  .caption {
-    padding: 10px;
-    font-size: 14px;
-  }
-  
-  .caption span {
-    font-weight: bold;
-  }
-  
-  
+  align-items: center;
+  margin-top: 10px;
+}
+
+.addComment input, .addReply input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.postCommentButton {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.postCommentButton:hover {
+  background-color: #1877f2;
+}
+// .reply {
+//   display: flex;
+//   flex-direction: column  ;
+// }

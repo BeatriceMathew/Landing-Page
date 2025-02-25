@@ -40,7 +40,7 @@ const Sidebar = () => {
         </li>
         <li className={Styles.navItem}>
           <AddBoxOutlinedIcon className={Styles.icon} />
-          <span>Create</span>
+          <span><Link to='/designer/create' className={Styles.link}>  Create</Link></span>
         </li>
         <li className={Styles.navItem}>
           <AccountCircleOutlinedIcon className={Styles.icon} />

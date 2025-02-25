@@ -10,7 +10,7 @@ import Register from '../../pages/register/Register';
 import Dialog from '@mui/material/Dialog';
 
 import Slide from '@mui/material/Slide';
-import RegisterDesigner from '../../pages/register/RegisterDesigner';
+import RegisterDesigner from '../../pages/register/RegisterUser';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;

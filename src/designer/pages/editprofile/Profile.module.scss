@@ -10,12 +10,13 @@
         display: flex;
     
         .sidebar{
-          min-height: 100%;
-          position: fixed;
+          //min-height: 100%;
+          position: fixed; /* Keeps the sidebar fixed while scrolling */
           height: 100%;
+         
         }
         .main{
-            margin-left: 430px;
+            margin-left: 500px;
     
     
         }

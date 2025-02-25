@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Styles from "./Register.module.scss";
+import Styles from "./RegisterUser.module.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Box, Button } from "@mui/material";
 
 
-const RegisterDesigner = () => {
+const RegisterUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
@@ -54,7 +54,7 @@ const RegisterDesigner = () => {
                 onChange={(e) => setName(e.target.value)}
               />
               <input
-                type="email"
+                type="text"
                
                 placeholder="enter email"
                 className={Styles.email}
@@ -102,4 +102,4 @@ const RegisterDesigner = () => {
   );
 };
 
-export default RegisterDesigner;
+export default RegisterUser;

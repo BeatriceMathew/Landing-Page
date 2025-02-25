@@ -1,42 +1,63 @@
-import React, { useState } from "react";
-import Styles from "./payment.module.scss";
+import React from 'react'
+import Styles from './payment.module.scss'
+import Sidebar from '../../components/sidebar/Sidebar'
+
 
 const Payment = () => {
-  const [paymentMethod, setPaymentMethod] = useState("card");
-
-  const handlePayment = (e) => {
-    e.preventDefault();
-    alert(`Payment successful using ${paymentMethod.toUpperCase()}!`);
-  };
-
   return (
-    <div className={Styles.paymentContainer}>
-      <div className={Styles.paymentBox}>
-        <h2> Payment</h2>
-        <form className={Styles.paymentForm} onSubmit={handlePayment}>
-          <select value={paymentMethod} onChange={(e) => setPaymentMethod(e.target.value)}>
-            <option value="card">Credit/Debit Card</option>
-            <option value="upi">UPI</option>
-            <option value="netbanking">Net Banking</option>
-            
-          </select>
+    <div className={Styles.main}>
+       <div className={Styles.sidebar}>
+        <Sidebar />
+      </div>
+      <div className={Styles.login}>   
+        <div className={Styles.title}>
+          <span>User Details</span>
+        </div>
+        <div className={Styles.name}>
+          <span>Name:</span>
+          <span>User</span>
+        </div>
+        <div className={Styles.email}>
+          <span>Email</span>
+          <span>123@gmail.com</span>
+        </div>
+      </div>
+    <div className={Styles.paymentPage}>
+      <div className={Styles.paymentContainer}>
+        <h2 className={Styles.paymentTitle}>Price Details</h2>
 
-          {paymentMethod === "card" && (
-            <>
-              <input type="text" placeholder="Card Number" required />
-              <input type="text" placeholder="MM/YY" required />
-              <input type="text" placeholder="CVV" required />
-            </>
-          )}
+        <div className={Styles.priceDetails}>
+          <div className={Styles.priceItem}>
+            <span className={Styles.label}>Price (Items)</span>
+            <span className={Styles.value}>₹2,999</span>
+          </div>
+        
 
-          {paymentMethod === "upi" && <input type="text" placeholder="Enter UPI ID" required />}
-          {paymentMethod === "netbanking" && <input type="text" placeholder="Enter Bank Name" required />}
+        </div>
 
-          <button type="submit" className={Styles.payButton}>Pay Now</button>
-        </form>
+        <div className={Styles.totalPayable}>
+          <span className={Styles.label}>Total Payable</span>
+          <span className={Styles.value}>₹2,549</span>
+        </div>
+
+        <h3 className={Styles.sectionTitle}>UPI Payment</h3>
+        <div className={Styles.upiDetails}>
+          <label className={Styles.upiLabel}>Enter UPI ID</label>
+          <input
+            type="text"
+            placeholder="example@upi"
+            className={Styles.upiInput}
+          />
+        </div>
+
+        <button className={Styles.payButton}>
+          Proceed to Pay ₹2,549
+        </button>
+
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Payment;
+export default Payment

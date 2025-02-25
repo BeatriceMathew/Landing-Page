@@ -10,6 +10,7 @@ const Suggestions = ({ suggestions }) => {
           <img className={Styles.suggestionProfilePic} src={suggestion.profilePic} alt="Profile" />
           <span className={Styles.suggestionUsername}>{suggestion.username}</span>
           <span className={Styles.suggestionFollowers}>{suggestion.followers} Followers</span>
+          
         </div>
       ))}
     </div>

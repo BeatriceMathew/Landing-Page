@@ -7,6 +7,8 @@ import Explore from '../user/pages/explore/Explore'
 import Search from '../user/pages/search/Search'
 import Order from '../user/pages/order/Order'
 import Payment from '../user/pages/payment/Payment'
+import DesignerProfile from '../user/pages/Account/DesignerProfile'
+import OrderView from '../user/pages/vieworders/OrderView'
 
 const UserRoutes = () => {
   return (
@@ -19,6 +21,8 @@ const UserRoutes = () => {
         <Route path='/search' element={<Search/>}/>
         <Route path='/order' element={<Order/>}/>
         <Route path='/payment' element={<Payment/>}/>
+        <Route path='/designerprofile' element={<DesignerProfile/>}/>
+        <Route path='/orderview' element={<OrderView/>}/>
         
       </Routes>
     </div>

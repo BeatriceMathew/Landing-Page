@@ -116,8 +116,10 @@ input[type="file"]::file-selector-button:hover {
 }
 
 /* Styling for the submit button */
-button {
-  background-color: #0095f6;
+.button {
+  background-color: #366787;
+  display: flex;
+  justify-content: center;
   color: white;
   padding: 14px;
   font-size: 16px;
@@ -129,15 +131,17 @@ button {
   width: 100%;
   margin-top: 15px;
   font-family: 'Arial', sans-serif;
+  align-items: center;
+  &:hover {
+    background-color: #1a4d6b;
+  }
+  
+  &:active {
+    background-color: #0071a3;
+  }
 }
 
-button:hover {
-  background-color: #0084d1;
-}
 
-button:active {
-  background-color: #0071a3;
-}
 
 /* Cursor styling for select and file input */
 select,

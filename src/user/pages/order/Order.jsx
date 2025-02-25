@@ -169,7 +169,7 @@ const CreateOrder = () => {
             ))}
           </select>
 
-          <button type="submit">Submit Order</button>
+          <button type="submit" className={Styles.button}>Order Now</button>
         </form>
       </div>
     </div>
